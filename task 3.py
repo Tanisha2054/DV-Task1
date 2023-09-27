@@ -1,39 +1,13 @@
-def add(num1, num2):
-    return num1 + num2
-
-def subtract(num1, num2):
-    return num1 - num2
- 
-def multiply(num1, num2):
-    return num1 * num2
- 
-def divide(num1, num2):
-    return num1 / num2
- 
-print("Please select operation -\n" \
-        "1. Add" \
-        "2. Subtract" \
-        "3. Multiply" \
-        "4. Divide")
- 
- 
-select = int(input("Select operations form 1, 2, 3, 4 :"))
- 
-number_1 = int(input("Enter first number: "))
-number_2 = int(input("Enter second number: "))
- 
-if select == 1:
-    print(number_1, "+", number_2, "=",
-                    add(number_1, number_2))
- 
-elif select == 2:
-    print(number_1, "-", number_2, "=",
-                    subtract(number_1, number_2))
- 
-elif select == 3:
-    print(number_1, "*", number_2, "=",
-                    multiply(number_1, number_2))
- 
-elif select == 4:
-    print(number_1, "/", number_2, "=",
-                    divide(number_1, number_2))
+a=int(input("enter the first number"))
+b=int(input("enter the second number"))
+c=input("enter any multiplication operation of your choice")
+if(c=='+'):
+    print(a+b)
+elif(c=='-'):
+    print(abs(a-b))
+elif(c=='*'):
+    print(a*b)
+elif(c=='/'):
+    print(a/b)
+else:
+    print("invalid choice")
